@@ -40,7 +40,6 @@ class PostController extends Controller
 
         $post = Post::create([
             'title' => $request->title,
-            'slug' => $request->slug,
             'content' => $request->content,
             'is_published' => $request->is_published,
             'meta_description' => $request->meta_description,
